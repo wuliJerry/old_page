@@ -5,6 +5,10 @@
             Ruijie Gao's Page
         </title>
 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/header.css">
         <link rel="stylesheet" href="styles/footer.css">
         <link rel="stylesheet" href="styles/general.css">
         <link rel="stylesheet" href="styles/bye-gaps.css">
@@ -16,9 +20,25 @@
 
     <body>
         <div class="main-div">
+            <div class="header">
+                <div class="header-left">
+                    <a class="path" href="https://wuliJerry.github.io" target="_blank"> /home/Ruijie/ </a>
+                </div>
+                <div class="header-right">
+                    <div>
+                        <button class="blog">Blog</button>
+                        <button class="cv" id="cvButton">CV</button>
+                        <script>
+                            var button = document.getElementById("cvButton")
+                            button.addEventListener("click", function () {
+                                window.open("src-file/CV.pdf");
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
             <div>
             </div>
-            <div></div>
             <div class="footer-section">
                 <div class="waves">
                     <svg viewBox="0 0 1920 250" xmlns="http://www.w3.org/2000/svg" class="DividerSvg-nhcneq-0-laHIGl">
