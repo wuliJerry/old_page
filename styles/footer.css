@@ -1,0 +1,30 @@
+.footer-section {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin: 0px;
+    background-color: transparent;
+}
+
+.footer {
+    background-color: rgb(59, 66, 82);
+    min-height: 100px;
+}
+.DividerSvg-nhcneq-0-laHIGl {
+    background-color: transparent;
+}
+
+.WaveFooter___StyledPath-nrfszb-0-cijXdC {
+    transition: fill 400ms ease-in-out 0s;
+    fill: rgb(55, 61, 76);
+}
+
+.WaveFooter___StyledPath2-nrfszb-1-hRcAMi {
+    transition: fill 400ms ease-in-out 0s;
+    fill: rgb(57, 64, 79);
+}
+
+.WaveFooter___StyledPath3-nrfszb-2-bopVfe {
+    transition: fill 400ms ease-in-out 0s;
+    fill: rgb(59, 66, 82);
+}

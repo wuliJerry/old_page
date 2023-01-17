@@ -1,0 +1,19 @@
+@import "nord.css";
+
+
+body {
+    background-color: var(--nord0);
+    color: var(--nord8);
+}
+
+.main-div {
+    display: flex;
+    flex-direction: column;
+    line-height: 0;
+    min-height: 500px;
+}
+
+p {
+    color: red;
+}
+
