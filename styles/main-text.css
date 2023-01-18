@@ -6,10 +6,7 @@
 
 .intro-opening {
     font-weight: bold;
-    /*background-color: rgb(236, 239, 244);*/
     margin-top: 100px;
-    width: 1200px;
-    height: 500px;
 
     display: flex;
     flex-direction: row;
@@ -17,9 +14,6 @@
 }
 
 .left-one {
-    width: 500px;
-    height: 500px;
-
     display: flex;
     flex-direction: column;
 }
