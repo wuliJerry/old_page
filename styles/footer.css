@@ -1,5 +1,5 @@
 .footer-section {
-    position: fixed;
+    /*position: fixed;*/
     bottom: 0;
     width: 100%;
     margin: 0px;
@@ -28,4 +28,23 @@
 .WaveFooter___StyledPath3-nrfszb-2-bopVfe {
     transition: fill 400ms ease-in-out 0s;
     fill: rgb(59, 66, 82);
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    line-height: 1;
+    padding-bottom: 80px;
+
+}
+
+.content {
+    color: #88c0d0;
+    font-weight: 900;
+    font-size: large;
+
+    cursor: pointer;
+    text-decoration: underline;
+
 }

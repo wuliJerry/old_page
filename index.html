@@ -21,7 +21,7 @@
 
     <body>
         <div class="main-div">
-            <div class="header">
+            <div class="header" id="header">
                 <div class="header-left">
                     <a class="path" href="https://wuliJerry.github.io" target="_blank"> /home/Ruijie/ </a>
                 </div>
@@ -42,7 +42,7 @@
 
 
             <div class="main-text">
-                <div class="intro-opening">
+                <div class="intro-opening" id="intro">
                     <div class="left-one">
                         <div class="name">
                             <p>Hi, I am</p>
@@ -59,9 +59,41 @@
                         <img src="img/opening.svg">
                     </div>
                 </div>
-            </div>
-            
 
+                <svg class="DividerSvg1" viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1440 21.21V120H0V21.21C120 35.07 240 42 360 42s240-6.93 360-20.79c88.328-8.794 154.574-14.333 198.738-16.618A3120.562 3120.562 0 0 1 1080 .42c120 0 240 6.93 360 20.79z"></path>
+                </svg>
+
+                <div class="edu-section" id="eduction">
+                    <div class="education">
+                        <div class="edu-info">
+                            <h1 class="edu-title">BACHELOR OF SCIENCE (B.S.) </h1>
+                            <h1 class="major">IN <span style="font-weight: 900">ELECTRONIC ENGINEERING</span></h1>
+                            <a class="program-name" href="https://www.gla.ac.uk/schools/engineering/international/uestc/" target="_blank">
+                                Joint Program by University of Glasgow and UESTC
+                            </a>
+                            <p class="graduate-year">Expected Graduation June 2025</p>
+                        </div>
+
+                        <div class="edu-pic">
+                            <div class="uofg-icon">
+                                <img src="icons/UoG_keyline.png" style="width: 100%;">
+                            </div>
+                            <div class="uestc-icon">
+                                <img src="icons/uestc_waifu2x_art_noise3_scale.png" style="width: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <svg class="DividerSvg2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path fill-opacity="1" d="M0,96L48,101.3C96,107,192,117,288,138.7C384,160,480,192,576,213.3C672,235,768,245,864,234.7C960,224,1056,192,1152,186.7C1248,181,1344,203,1392,213.3L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+                </svg>
+                <div>
+
+                </div>
+
+            </div>
 
 
 
@@ -74,8 +106,23 @@
                     </svg>
                 </div>
                 <div class="footer">
-
+                    <div><a class="content" href="#header">Top</a></div>
+                    <div><a class="content" href="#intro">Intro</a></div>
+                    <div><a class="content" href="#eduction">Education</a></div>
+                    <div><a class="content" >Experience</a></div>
+                    <div><a class="content" >Skills</a></div>
+                    <div><a class="content" >Project/Course Work</a></div>
                 </div>
+                <script>
+                    const list = document.getElementById("footer");
+                    list.addEventListener("click", function(e) {
+                        if (e.target && e.target.nodeName === "A") {
+                            e.preventDefault();
+                            const href = e.target.getAttribute("href");
+                            window.location.href = href;
+                        }
+                    })
+                </script>
             </div>
 
         </div>
