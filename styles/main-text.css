@@ -156,6 +156,9 @@
     color: #e5e9f0;
 }
 
+.expr-item {
+    margin-top: 30px;
+}
 
 
 .expr-col {
@@ -196,4 +199,32 @@
     font-size: 25px;
     font-weight: 400;
     color: #b48ead
+}
+
+
+.contact-section {
+    display: grid;
+    line-height: 1.2;
+    place-items: center;
+}
+
+.contact {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    width: 50%;
+}
+
+.contact-title {
+    color: #d8dee9;
+    font-size: 60px;
+}
+
+.icon {
+    width: 40px;
+    fill: #d8dee9;
+    cursor: pointer;
 }
