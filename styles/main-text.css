@@ -149,6 +149,7 @@
 .expr-link {
     text-decoration: underline;
     cursor: pointer;
+    color: #e5e9f0;
 }
 
 .expr-link:visited {
