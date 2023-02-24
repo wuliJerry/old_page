@@ -27,8 +27,15 @@
                 </div>
                 <div class="header-right">
                     <div>
-                        <button class="blog">Blog</button>
+                        <button class="blog" id="blogButton">Blog</button>
                         <button class="cv" id="cvButton">CV</button>
+                        <script>
+                            var button = document.getElementById("blogButton")
+                            button.addEventListener("click", function () {
+                                window.open("https://wulijerry.github.io/blog/");
+                            });
+                        </script>
+
                         <script>
                             var button = document.getElementById("cvButton")
                             button.addEventListener("click", function () {
