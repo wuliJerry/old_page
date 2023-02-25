@@ -13,22 +13,21 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    /*padding: 20px;*/
 }
 
 .left-one {
     margin-top: 0;
     padding-top: 0;
-    flex: 1;
+    flex: 1.2;
     display: flex;
     flex-direction: column;
 }
 
 .name {
     color: #d8dee9;
-    font-size: 80px;
+    font-size: 4.6875vw; /* Previously: 80px*/
     /*padding-top: 10px;*/
-    padding-left: 10px;
+    padding-left: 0.586vw;
     line-height: 1.2;
 }
 
@@ -36,8 +35,8 @@
     color: #8fbcbb;
     line-height: 1.5;
     font-weight: 500;
-    font-size: 25px;
-    margin-top: 20px;
+    font-size: 1.4625vw;
+    margin-top: 1.1172vw;
 }
 
 .right-one {
@@ -50,7 +49,7 @@
 }
 
 .DividerSvg1 {
-    margin-top: 80px;
+    margin-top: 4.6875vw;
     fill: rgb(41, 46, 57);
     transition: fill 400ms ease-in-out 0s;
 }
@@ -66,7 +65,7 @@
 }
 
 .education {
-    margin-top: 100px;
+    margin-top: 5.86vw;
     line-height: 1.2;
     background-color: #292e39;
 
@@ -76,7 +75,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border-bottom: 200px;
+    border-bottom: 11.72vw;
 }
 
 .edu-info {
@@ -84,20 +83,20 @@
 
 .edu-title {
     font-weight: 700;
-    font-size: 50px;
+    font-size: 2.93vw;
 }
 
 .major {
-    margin-top: 10px;
+    margin-top: 0.586vw;
     width: 100%;
-    font-size: 45px;
+    font-size: 2.637vw;
 }
 
 .program-name {
     text-decoration: underline;
     color: #e5e9f0;
     cursor: pointer;
-    font-size: 30px;
+    font-size: 1.758vw;
     line-height: 2;
 }
 
@@ -107,8 +106,8 @@
 
 .graduate-year {
     font-style: italic;
-    margin-top: 30px;
-    font-size: 20px;
+    margin-top: 1.758vw;
+    font-size: 1.17vw;
 }
 
 .edu-pic {
@@ -118,7 +117,7 @@
 }
 
 .uestc-icon {
-    margin-top: 40px;
+    margin-top: 2.344vw;
 }
 
 .DividerSvg2 {
@@ -128,7 +127,7 @@
 }
 
 .experience-section {
-    margin-top: 50px;
+    margin-top: 2.93vw;
     line-height: 1.2;
     color: #e5e9f0;
     width: 100%;
@@ -145,7 +144,7 @@
     /*justify-content: space-around;*/
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 30px;
+    grid-column-gap: 2vw;
 
 }
 
@@ -160,7 +159,7 @@
 }
 
 .expr-item {
-    margin-top: 30px;
+    margin-top: 1.758vw;
 }
 
 
@@ -177,7 +176,7 @@
     line-height: 1.4;
     color: #d8dee9;
 
-    padding-bottom: 100px;
+    padding-bottom: 5.86vw;
 }
 
 .project {
@@ -189,17 +188,17 @@
 }
 
 .project-item {
-    margin-bottom: 15px;
+    margin-bottom: 0.879vw;
 }
 
 .project-name {
-    font-size: 30px;
+    font-size: 1.758vw;
     font-weight: 700;
 }
 
 
 .project-class {
-    font-size: 25px;
+    font-size: 1.465vw;
     font-weight: 400;
     color: #b48ead
 }
@@ -212,8 +211,8 @@
 }
 
 .contact {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 5.86vw;
+    margin-bottom: 5.86vw;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -223,11 +222,11 @@
 
 .contact-title {
     color: #d8dee9;
-    font-size: 60px;
+    font-size: 3.51562vw;
 }
 
 .icon {
-    width: 40px;
+    width: 2.344vw;
     fill: #d8dee9;
     cursor: pointer;
 }
