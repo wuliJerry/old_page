@@ -5,13 +5,83 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles/nord.css">
+    <link rel="stylesheet" href="../styles/bye-gaps.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/content.css">
+    <link rel="stylesheet" href="../styles/header.css">
     <title>Blog Page</title>
 </head>
 <body>
-    <h1 style="font-weight: 700; color: darkseagreen;">
-        Still Constructing 
-    </h1>
+    <div class="main-div">
 
+        <div class="header">
+            <div class="header-left">
+                <a class="path" href=".">/home/Ruijie/Blog</a>
+            </div>
+            <div class="header-right">
+                <div>
+                    <button class="back" id="backButton" style="font-size: 1.5vw;">
+                        <span style="color: #5E81AC;">cd</span> ..
+                    </button>
+                    <script>
+                        document.getElementById("backButton").onclick = function () {
+                            location.href = "../index.html";
+                        };
+                    </script>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="main-text">
+            <div class="content">
+                <h1 class="title">
+                    CONTENTS
+                </h1>
+                <hr style="opacity: 0.5;">
+
+                <div id="blog-posts" class="blog-posts">
+
+                </div>
+                <script>
+                    // Fetch the json file
+                    fetch('posts.json')
+                        .then(response => response.json())
+                        .then(data =>{
+                            // Loop through each post
+                            data.posts.forEach(post => {
+                                // Create a div for each post
+                                const postDiv = document.createElement('div');
+                                postDiv.classList.add('post');
+
+                                // Add the post title as the h2 attribute as a link to the blog page
+                                const postTitle = document.createElement('h2');
+                                const postLink = document.createElement('a');
+                                postLink.textContent = post.title;
+                                postLink.href = 'posts/'+ post.slug + '.html';
+                                postTitle.appendChild(postLink);
+                                postDiv.appendChild(postTitle);
+
+                                // Add the post date as the h3 attribute
+                                const postDate = document.createElement('h3');
+                                postDate.textContent = post.date;
+                                postDiv.appendChild(postDate);
+
+                                // Add the post content as the p attribute
+                                const postExcerpt = document.createElement('p');
+                                postExcerpt.textContent = post.excerpt;
+                                postDiv.appendChild(postExcerpt);
+
+                                // Add the post link as the a attribute
+                                postDiv.dataset.slug = post.slug;
+
+                                // Add the posts to the blog-posts div
+                                document.getElementById('blog-posts').appendChild(postDiv);
+                            });
+                        })
+                </script>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

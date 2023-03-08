@@ -1,0 +1,23 @@
+.content {
+    text-align: center;
+}
+
+.title {
+    margin-top: 1.5vw;
+    line-height: 2;
+    font-size: 3vw;
+    font-weight: 900;
+    color: #eceff4;
+}
+
+.post {
+    margin-top: 1.5vw;
+    line-height: 1.2;
+    font-size: 1.5vw;
+    font-weight: 400;
+    color: #eceff4;
+}
+
+.post :visited {
+    color: #eceff4;
+}

@@ -28,7 +28,7 @@
     cursor: pointer;
 }
 
-.blog, .cv{
+.blog, .cv, .back{
     color: rgb(236, 239, 244);
     border: none;
     background-color: transparent;
@@ -51,6 +51,6 @@
     margin-right: 0px;
 }
 
-.blog:hover, .cv:hover {
+.blog:hover, .cv:hover, .back:hover {
     background-color: rgb(79, 88, 99);
 }
