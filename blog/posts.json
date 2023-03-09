@@ -3,7 +3,7 @@
       {
         "title": "My First Blog Post",
         "date": "2023-03-01",
-        "excerpt": "Hello World!",
+        "excerpt": "Hello World! This is my first blog post, used for testing the blog page function.",
         "slug": "my-first-blog-post"
       }
     ]

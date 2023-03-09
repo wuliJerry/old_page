@@ -39,9 +39,7 @@
                     CONTENTS
                 </h1>
                 <hr style="opacity: 0.5;">
-
                 <div id="blog-posts" class="blog-posts">
-
                 </div>
                 <script>
                     // Fetch the json file
@@ -53,6 +51,11 @@
                                 // Create a div for each post
                                 const postDiv = document.createElement('div');
                                 postDiv.classList.add('post');
+                                const postLeft = document.createElement('div');
+                                postLeft.classList.add('post-left');
+                                const postRight = document.createElement('div');
+                                postRight.classList.add('post-right');
+
 
                                 // Add the post title as the h2 attribute as a link to the blog page
                                 const postTitle = document.createElement('h2');
@@ -60,23 +63,27 @@
                                 postLink.textContent = post.title;
                                 postLink.href = 'posts/'+ post.slug + '.html';
                                 postTitle.appendChild(postLink);
-                                postDiv.appendChild(postTitle);
+                                postLeft.appendChild(postTitle);
 
                                 // Add the post date as the h3 attribute
                                 const postDate = document.createElement('h3');
                                 postDate.textContent = post.date;
-                                postDiv.appendChild(postDate);
+                                postLeft.appendChild(postDate);
 
                                 // Add the post content as the p attribute
                                 const postExcerpt = document.createElement('p');
+                                postExcerpt.classList.add('post-excerpt');
                                 postExcerpt.textContent = post.excerpt;
-                                postDiv.appendChild(postExcerpt);
+                                postRight.appendChild(postExcerpt);
 
-                                // Add the post link as the a attribute
+                                // Add the post link as the attribute
                                 postDiv.dataset.slug = post.slug;
 
                                 // Add the posts to the blog-posts div
                                 document.getElementById('blog-posts').appendChild(postDiv);
+                                postDiv.appendChild(postLeft);
+                                postDiv.appendChild(postRight);
+
                             });
                         })
                 </script>
