@@ -1,6 +1,13 @@
 {
     "posts": [
       {
+        "title": "Likwid tool chain note",
+        "date": "2023-03-13",
+        "excerpt": "A basic note about the usage of likwid, summary from its youtube tutorial",
+        "slug": "likwid-tool-note"
+      },
+
+      {
         "title": "My First Blog Post",
         "date": "2023-03-01",
         "excerpt": "Hello World! This is my first blog post, used for testing the blog page function.",
