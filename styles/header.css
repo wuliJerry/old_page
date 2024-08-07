@@ -8,6 +8,7 @@
     top: 0;
     left: 0;
     width: 100%;
+    color: 
 }
 
 .header-left {
@@ -23,13 +24,14 @@
 }
 
 .path {
-    color: #88C0D0FF;
+    color: #2E3440;
     text-decoration: none;
     cursor: pointer;
 }
 
 .blog, .cv, .back{
-    color: rgb(236, 239, 244);
+    //color: rgb(236, 239, 244);
+    color: #2E3440;
     border: none;
     background-color: transparent;
     font-size: 1.172vw;
@@ -40,6 +42,7 @@
     border-radius: 0.25em;
     cursor: pointer;
     transition: background-color 0.15s;
+
 }
 
 
